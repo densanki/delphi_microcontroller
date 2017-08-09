@@ -1,0 +1,11 @@
+#ANFANG#
+
+     %  MOV P1,  #1d   %
+     %  M1             %
+     %  MOV A,   P1    %
+     %  RL  A          %
+     %  MOV P1,  A     %
+     %  cpl P5.0       %
+     %  JNB P1.7,M1    %
+
+#ENDE#
