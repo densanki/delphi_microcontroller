@@ -1,7 +1,9 @@
-program Project1;
+program Microcontroller;
+
+{$MODE Delphi}
 
 uses
-  Forms,
+  Forms, Interfaces,
   Unit1 in 'Unit1.pas' {Form1},
   Unit2 in 'Unit2.pas';
 

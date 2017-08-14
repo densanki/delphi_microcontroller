@@ -1,9 +1,11 @@
 unit Unit1;
 
+{$MODE Delphi}
+
 interface
 
 uses
-  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  LCLIntf, LCLType, LMessages, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, StdCtrls, ExtCtrls, StrUtils, Math, Unit2, ComCtrls, Menus;
 
 type
@@ -160,7 +162,7 @@ var
 
 implementation
 
-{$R *.dfm}
+{$R *.lfm}
 
 procedure TForm1.Ausgabe;
 var X: Integer;
@@ -876,25 +878,25 @@ end;
 procedure TForm1.Info1Click(Sender: TObject);
 begin
   Showmessage( 'Wurde von Gerlando Caldara' + #10#13 +
-               'während der Prüfungsvorbereitung geschrieben' + #10#13 + #10#13 +
+               'wÃ¤hrend der PrÃ¼fungsvorbereitung geschrieben' + #10#13 + #10#13 +
                'Eine Simulation von 8051 Befehlen' + #10#13 +
-               'Unterstützte Befehle'  + #10#13 +
+               'UnterstÃ¼tzte Befehle'  + #10#13 +
                'ANL, ORL, XRL, CPL, RL, RLC, RR, RRC, SWAP,' + #10#13 +
                'ADD, ADDC, SUBB, INC, DEC, ' + #10#13 +
                'SJMP, LJMP, NOP, JZ, JC, JNC, JB, JNB,JNZ,' + #10#13 +
                'CLR, SETB, CPL,' + #10#13 +               
                'MOV'+ #10#13 + #10#13 +
-               'Nicht Unterstütze Funktionen oder Befehle' + #10#13 +
+               'Nicht UnterstÃ¼tze Funktionen oder Befehle' + #10#13 +
                'SJMP und LJMP identisch jeweils Sprungdistanz unbegrenzt' + #10#13 +
-               'Rechnen Operationen bis 255 und 0 möglich' + #10#13 +
+               'Rechnen Operationen bis 255 und 0 mÃ¶glich' + #10#13 +
                'CARRY Bits werden nicht gesetzt' + #10#13 +
-               'DPTR und Direct Befehle nicht möglich' + #10#13 +
+               'DPTR und Direct Befehle nicht mÃ¶glich' + #10#13 +
                'MOVC, MOVX, XCH,' + #10#13 +
                'Mul, DIV, Da' + #10#13 +
                'ACALL, LCALL, RET, RETI, AJMP, LJMP, SJMP, JMP, ' + #10#13 +
                'CJNE, DJNZ, JBC' + #10#13 +  #10#13 +
                'Vor jedem Befehl % Anfangen und mit % Beenden wegen des Simplens Parsen' +  #10#13 +
-               'Viel Spaß' );
+               'Viel SpaÃŸ' );
 end;
 
 procedure TForm1.Lauflicht1Click(Sender: TObject);
